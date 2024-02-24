@@ -16,6 +16,7 @@ namespace StocksTracker.Domain.Entities
         [Required]
         public string EmailAddress { get; set; }
         public string PhoneNumber { get; set; }
+        public string Nationality { get; set; }
 
     }
 }
