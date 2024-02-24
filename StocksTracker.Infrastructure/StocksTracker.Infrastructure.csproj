@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StocksTracker.Domain\StocksTracker.Domain.csproj" />
+    <ProjectReference Include="..\StocksTracker.Repository\StocksTracker.Repository.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1593,13 +1593,27 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2",
-          "StocksTracker.Domain": "1.0.0"
+          "StocksTracker.Domain": "1.0.0",
+          "StocksTracker.Repository": "1.0.0"
         },
         "compile": {
           "bin/placeholder/StocksTracker.Infrastructure.dll": {}
         },
         "runtime": {
           "bin/placeholder/StocksTracker.Infrastructure.dll": {}
+        }
+      },
+      "StocksTracker.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "StocksTracker.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StocksTracker.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StocksTracker.Repository.dll": {}
         }
       }
     }
@@ -4488,6 +4502,11 @@
       "type": "project",
       "path": "../StocksTracker.Infrastructure/StocksTracker.Infrastructure.csproj",
       "msbuildProject": "../StocksTracker.Infrastructure/StocksTracker.Infrastructure.csproj"
+    },
+    "StocksTracker.Repository/1.0.0": {
+      "type": "project",
+      "path": "../StocksTracker.Repository/StocksTracker.Repository.csproj",
+      "msbuildProject": "../StocksTracker.Repository/StocksTracker.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {

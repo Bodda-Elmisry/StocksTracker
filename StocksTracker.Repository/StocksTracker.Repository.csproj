@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StocksTracker.Domain\StocksTracker.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="IServices\" />
+  </ItemGroup>
+
 </Project>
