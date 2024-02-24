@@ -9,3 +9,8 @@ F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Repository\obj\Debug\
 F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Repository\obj\Debug\net8.0\refint\StocksTracker.Repository.dll
 F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Repository\obj\Debug\net8.0\StocksTracker.Repository.pdb
 F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Repository\obj\Debug\net8.0\ref\StocksTracker.Repository.dll
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Repository\bin\Debug\net8.0\StocksTracker.Domain.dll
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Repository\bin\Debug\net8.0\StocksTracker.Domain.pdb
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Repository\obj\Debug\net8.0\StocksTracker.Repository.csproj.AssemblyReference.cache
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Repository\obj\Debug\net8.0\StocksTracker.Repository.sourcelink.json
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Repository\obj\Debug\net8.0\StocksTracker.Repository.csproj.CopyComplete

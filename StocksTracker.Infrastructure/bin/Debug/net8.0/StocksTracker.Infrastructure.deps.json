@@ -12,7 +12,8 @@
           "Microsoft.EntityFrameworkCore.Design": "8.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.2",
-          "StocksTracker.Domain": "1.0.0"
+          "StocksTracker.Domain": "1.0.0",
+          "StocksTracker.Repository": "1.0.0"
         },
         "runtime": {
           "StocksTracker.Infrastructure.dll": {}
@@ -925,6 +926,14 @@
         "runtime": {
           "StocksTracker.Domain.dll": {}
         }
+      },
+      "StocksTracker.Repository/1.0.0": {
+        "dependencies": {
+          "StocksTracker.Domain": "1.0.0"
+        },
+        "runtime": {
+          "StocksTracker.Repository.dll": {}
+        }
       }
     }
   },
@@ -1467,6 +1476,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "StocksTracker.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StocksTracker.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

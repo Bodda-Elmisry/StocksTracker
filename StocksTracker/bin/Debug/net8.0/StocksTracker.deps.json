@@ -910,10 +910,19 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2",
-          "StocksTracker.Domain": "1.0.0"
+          "StocksTracker.Domain": "1.0.0",
+          "StocksTracker.Repository": "1.0.0"
         },
         "runtime": {
           "StocksTracker.Infrastructure.dll": {}
+        }
+      },
+      "StocksTracker.Repository/1.0.0": {
+        "dependencies": {
+          "StocksTracker.Domain": "1.0.0"
+        },
+        "runtime": {
+          "StocksTracker.Repository.dll": {}
         }
       }
     }
@@ -1497,6 +1506,11 @@
       "sha512": ""
     },
     "StocksTracker.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StocksTracker.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

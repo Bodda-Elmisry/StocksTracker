@@ -15,3 +15,6 @@ F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Infrastructure\obj\De
 F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Infrastructure\obj\Debug\net8.0\StocksTracker.Infrastructure.pdb
 F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Infrastructure\obj\Debug\net8.0\StocksTracker.Infrastructure.genruntimeconfig.cache
 F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Infrastructure\obj\Debug\net8.0\ref\StocksTracker.Infrastructure.dll
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Infrastructure\bin\Debug\net8.0\StocksTracker.Repository.dll
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Infrastructure\bin\Debug\net8.0\StocksTracker.Repository.pdb
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Infrastructure\obj\Debug\net8.0\StocksTracker.Infrastructure.sourcelink.json

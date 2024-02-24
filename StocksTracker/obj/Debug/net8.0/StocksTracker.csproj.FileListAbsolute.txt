@@ -138,3 +138,6 @@ F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker\bin\Debug\net8.0\Stoc
 F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker\bin\Debug\net8.0\StocksTracker.Infrastructure.dll
 F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker\bin\Debug\net8.0\StocksTracker.Infrastructure.pdb
 F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker\bin\Debug\net8.0\StocksTracker.Domain.pdb
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker\bin\Debug\net8.0\StocksTracker.Repository.dll
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker\bin\Debug\net8.0\StocksTracker.Repository.pdb
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker\obj\Debug\net8.0\StocksTracker.sourcelink.json
