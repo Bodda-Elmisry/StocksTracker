@@ -1,0 +1,11 @@
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Domain\bin\Debug\net8.0\StocksTracker.Domain.deps.json
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Domain\bin\Debug\net8.0\StocksTracker.Domain.dll
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Domain\bin\Debug\net8.0\StocksTracker.Domain.pdb
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Domain\obj\Debug\net8.0\StocksTracker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Domain\obj\Debug\net8.0\StocksTracker.Domain.AssemblyInfoInputs.cache
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Domain\obj\Debug\net8.0\StocksTracker.Domain.AssemblyInfo.cs
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Domain\obj\Debug\net8.0\StocksTracker.Domain.csproj.CoreCompileInputs.cache
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Domain\obj\Debug\net8.0\StocksTracker.Domain.dll
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Domain\obj\Debug\net8.0\refint\StocksTracker.Domain.dll
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Domain\obj\Debug\net8.0\StocksTracker.Domain.pdb
+F:\Win Old 22-11-2023\Projects\StocksTracker\StocksTracker.Domain\obj\Debug\net8.0\ref\StocksTracker.Domain.dll
