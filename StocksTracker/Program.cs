@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using StocksTracker.Infrastructure.Data;
 using StocksTracker.Infrastructure.Repositories;
+using StocksTracker.Infrastructure.Services;
 using StocksTracker.Repository.IRepositories;
+using StocksTracker.Repository.IServices;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,8 +18,10 @@ builder.Services.AddDbContext<AppDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IClientRepository, ClientRepository>();
+builder.Services.AddScoped<IClientService, ClientService>();
 
 builder.Services.AddScoped<IStockRepository, StockRepository>();
+builder.Services.AddScoped<IStockService, StockService>();
 
 var app = builder.Build();
 

@@ -11,8 +11,9 @@ namespace StocksTracker.Repository.IRepositories
     {
         Task<IEnumerable<Client>> GetClients();
         Task<Client> GetClientAsync(int Id);
-        Task<bool> CreateClientsAsync(Client entity);
-        Task<bool> UpdateClientsAsync(Client entity);
-        Task<bool> DeleteClientsAsync(Client entity);
+        Task<Client> GetClientByEmailAsync(string Email);
+        Task<bool> CreateClientAsync(Client entity);
+        Task<bool> UpdateClientAsync(Client entity);
+        Task<bool> DeleteClientAsync(Client entity);
     }
 }

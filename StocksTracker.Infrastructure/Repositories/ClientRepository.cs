@@ -19,14 +19,14 @@ namespace StocksTracker.Infrastructure.Repositories
             this.context = context;
         }
 
-        public async Task<bool> CreateClientsAsync(Client entity)
+        public async Task<bool> CreateClientAsync(Client entity)
         {
             await context.Clients.AddAsync(entity);
             await context.SaveChangesAsync();
             return true;
         }
 
-        public async Task<bool> DeleteClientsAsync(Client entity)
+        public async Task<bool> DeleteClientAsync(Client entity)
         {
             context.Clients.Remove(entity);
             await context.SaveChangesAsync();
@@ -38,12 +38,17 @@ namespace StocksTracker.Infrastructure.Repositories
             return await context.Clients.FirstOrDefaultAsync(c => c.Id == Id);
         }
 
+        public async Task<Client> GetClientByEmailAsync(string Email)
+        {
+            return await context.Clients.FirstOrDefaultAsync(c => c.EmailAddress == Email);
+        }
+
         public async Task<IEnumerable<Client>> GetClients()
         {
             return await context.Clients.ToListAsync();
         }
 
-        public async Task<bool> UpdateClientsAsync(Client entity)
+        public async Task<bool> UpdateClientAsync(Client entity)
         {
             context.Clients.Update(entity);
             await context.SaveChangesAsync();
