@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StocksTracker.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fd441f4df60a3f4dc8c55ff5b32a216496ddd8e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8607aa548fe813d8447ebd72d45cdea77176f1e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("StocksTracker.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StocksTracker.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
