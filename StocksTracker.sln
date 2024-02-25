@@ -3,22 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksTracker", "StocksTracker\StocksTracker.csproj", "{72A87647-0F2F-4913-A6BB-22843B09F85E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StocksTracker", "StocksTracker\StocksTracker.csproj", "{72A87647-0F2F-4913-A6BB-22843B09F85E}"
 	ProjectSection(ProjectDependencies) = postProject
 		{7171490E-C09E-4C69-9F84-A15489FF8C1C} = {7171490E-C09E-4C69-9F84-A15489FF8C1C}
 		{E258EDD0-C095-4F3A-A513-896E81F419E6} = {E258EDD0-C095-4F3A-A513-896E81F419E6}
 		{F52EB265-F4E8-497D-8F72-5DA4A52F068F} = {F52EB265-F4E8-497D-8F72-5DA4A52F068F}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksTracker.Domain", "StocksTracker.Domain\StocksTracker.Domain.csproj", "{7171490E-C09E-4C69-9F84-A15489FF8C1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StocksTracker.Domain", "StocksTracker.Domain\StocksTracker.Domain.csproj", "{7171490E-C09E-4C69-9F84-A15489FF8C1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksTracker.Infrastructure", "StocksTracker.Infrastructure\StocksTracker.Infrastructure.csproj", "{E258EDD0-C095-4F3A-A513-896E81F419E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StocksTracker.Infrastructure", "StocksTracker.Infrastructure\StocksTracker.Infrastructure.csproj", "{E258EDD0-C095-4F3A-A513-896E81F419E6}"
 	ProjectSection(ProjectDependencies) = postProject
 		{7171490E-C09E-4C69-9F84-A15489FF8C1C} = {7171490E-C09E-4C69-9F84-A15489FF8C1C}
 		{F52EB265-F4E8-497D-8F72-5DA4A52F068F} = {F52EB265-F4E8-497D-8F72-5DA4A52F068F}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksTracker.Repository", "StocksTracker.Repository\StocksTracker.Repository.csproj", "{F52EB265-F4E8-497D-8F72-5DA4A52F068F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StocksTracker.Repository", "StocksTracker.Repository\StocksTracker.Repository.csproj", "{F52EB265-F4E8-497D-8F72-5DA4A52F068F}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "StocksTracker.UI", "StocksTracker.UI\StocksTracker.UI.esproj", "{853C4F28-284C-4C8E-85B6-4DD844B249A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +44,12 @@ Global
 		{F52EB265-F4E8-497D-8F72-5DA4A52F068F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F52EB265-F4E8-497D-8F72-5DA4A52F068F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F52EB265-F4E8-497D-8F72-5DA4A52F068F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853C4F28-284C-4C8E-85B6-4DD844B249A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853C4F28-284C-4C8E-85B6-4DD844B249A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853C4F28-284C-4C8E-85B6-4DD844B249A9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{853C4F28-284C-4C8E-85B6-4DD844B249A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853C4F28-284C-4C8E-85B6-4DD844B249A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853C4F28-284C-4C8E-85B6-4DD844B249A9}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
