@@ -29,5 +29,26 @@ namespace StocksTracker.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+
+
+        [HttpPost]
+        [Route("createstocksList")]
+        public async Task<IActionResult> AddStocksList(IEnumerable<Stock> stocks)
+        {
+            try
+            {
+                foreach(var stock in stocks)
+                {
+                    await service.CreateStockAsync(stock);
+                }
+                
+                return Ok(true);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

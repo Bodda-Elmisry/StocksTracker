@@ -8,7 +8,10 @@ namespace StocksTracker.Domain.Entities
 {
     public class Stock
     {
-
+        public Stock()
+        {
+            CreationDate = DateTime.Now;
+        }
         public int Id { get; set; }
         public decimal V { get; set; }
         public decimal VM { get; set; }
@@ -19,6 +22,5 @@ namespace StocksTracker.Domain.Entities
         public decimal T { get; set; }
         public decimal N { get; set; }
         public DateTime CreationDate { get; set; }
-        public DateTime GettingDate { get; set; }
     }
 }

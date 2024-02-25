@@ -72,9 +72,6 @@ namespace StocksTracker.Infrastructure.Migrations
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("GettingDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<decimal>("H")
                         .HasColumnType("decimal(18,2)");
 
