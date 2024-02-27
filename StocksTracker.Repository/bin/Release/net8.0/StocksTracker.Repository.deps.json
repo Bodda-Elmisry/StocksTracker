@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "StocksTracker.Repository/1.0.0": {
+        "dependencies": {
+          "StocksTracker.Domain": "1.0.0"
+        },
+        "runtime": {
+          "StocksTracker.Repository.dll": {}
+        }
+      },
+      "StocksTracker.Domain/1.0.0": {
+        "runtime": {
+          "StocksTracker.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StocksTracker.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StocksTracker.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
