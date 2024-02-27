@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using StocksTracker.WCFService.Models;
 using System.Runtime.Remoting.Contexts;
+using System.Threading;
 
 namespace StocksTracker.WCFService
 {
@@ -19,7 +20,19 @@ namespace StocksTracker.WCFService
         {
             client = new HttpClient();
         }
-        public async Task<string> GetData()
+        public async Task GetData()
+        {
+            while (true)
+            {
+                await SaveStocks();
+
+                Thread.Sleep(6 * 60 * 60 * 1000);
+            }
+            
+        }
+
+
+        private async Task<string> SaveStocks()
         {
             HttpResponseMessage response = await client.GetAsync("https://api.polygon.io/v2/aggs/ticker/AAPL/range/1/day/2023-01-09/2023-01-09?apiKey=e3t6XTbelIa8VopuCjy6bHXDisf2ksAJ");
 
@@ -31,13 +44,13 @@ namespace StocksTracker.WCFService
                     var stoksAsJson = Newtonsoft.Json.JsonConvert.SerializeObject(stoksResp.results.ToList());
                     var postCont = new StringContent(stoksAsJson, Encoding.UTF8, "application/json");
                     HttpResponseMessage savingStocksresponse = await client.PostAsync("http://localhost:5013/api/stock/createstocksList", postCont);
-                    if(savingStocksresponse.IsSuccessStatusCode)
+                    if (savingStocksresponse.IsSuccessStatusCode)
                     {
                         return "Stocks Add";
                     }
 
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     return ex.Message;
                 }
@@ -47,30 +60,7 @@ namespace StocksTracker.WCFService
             return string.Format("Getting data");
         }
 
-        public async Task<bool> GetStocks()
-        {
-            HttpResponseMessage response = await client.GetAsync("https://api.polygon.io/v2/aggs/ticker/AAPL/range/1/day/2023-01-09/2023-01-09?apiKey=e3t6XTbelIa8VopuCjy6bHXDisf2ksAJ");
 
-            if(response.IsSuccessStatusCode)
-            {
-                var stoksAsString =  await response.Content.ReadAsStringAsync();
-                //var stocks = JsonConvert.DeserializeObject<Stock>(stoksAsString);
-            }
 
-            return true;
-        }
-
-        //public CompositeType GetDataUsingDataContract(CompositeType composite)
-        //{
-        //    if (composite == null)
-        //    {
-        //        throw new ArgumentNullException("composite");
-        //    }
-        //    if (composite.BoolValue)
-        //    {
-        //        composite.StringValue += "Suffix";
-        //    }
-        //    return composite;
-        //}
     }
 }

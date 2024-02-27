@@ -1,0 +1,79 @@
+
+<style>
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+
+  .container {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    grid-gap: 20px; /* Gap between grid items */
+  }
+
+  .box {
+    padding: 20px;
+    /*border: 1px solid #ccc;*/
+  }
+
+  .form-group{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+  }
+</style>
+
+
+
+
+
+
+
+<h1 class="heading"><strong>Clients list </strong></h1>
+
+
+<!--div class="form-group">
+  <label for="userName">User Name</label>
+  <input type="text" class="form-control" name="userName" [(ngModel)]="userName">
+</div>-->
+<div class="form-group">
+  <button type="button" (click)="getClients()">Get Clients</button>
+  <button type="button" (click)="addClient()">Add Client</button>
+
+</div>
+
+<div class="form-group">
+</div>
+
+<div *ngIf="loading">loading...</div>
+
+<div *ngIf="errorMessage" class="alert alert-warning">
+  <strong>Warning!</strong> {{errorMessage | json}}
+</div>
+
+
+<ul>
+  <li class="card" *ngFor="let client of clients;">
+    <div class="container">
+      <div class="box">
+        <h2><a [routerLink]="['/clientDetails', client.id]">{{client.lastName}} {{client.firstName}}</a></h2>
+        <h3>Phone:- {{client.phoneNumber}}</h3>
+        <h3>Email:- {{client.emailAddress}}</h3>
+        <h3>Nationality:- {{client.nationality}}</h3>
+      </div>
+      <div class="box">
+        <button type="button" (click)="updateClient(client.id)">Edit</button>
+        <br />
+        <br />
+        <br />
+        <button type="button" (click) ="deleteClient(client.id)">Delete</button>
+
+      </div>
+    </div>
+  </li>
+</ul>
+
+

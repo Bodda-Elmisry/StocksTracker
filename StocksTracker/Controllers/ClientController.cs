@@ -9,10 +9,12 @@ namespace StocksTracker.Controllers
     public class ClientController : Controller
     {
         private readonly IClientService service;
+        private readonly INationalityService nationalityService;
 
-        public ClientController(IClientService service)
+        public ClientController(IClientService service, INationalityService nationalityService)
         {
             this.service = service;
+            this.nationalityService = nationalityService;
         }
 
         [HttpGet]
@@ -60,6 +62,21 @@ namespace StocksTracker.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("GetNationalitiyes")]
+        public async Task<IActionResult> GetNationalitiesList()
+        {
+            try
+            {
+                var nationalities = await nationalityService.GetAll();
+                return Ok(nationalities);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         [HttpPost]
         [Route("createclient")]
         public async Task<IActionResult> CreateClient(Client client)
@@ -98,7 +115,7 @@ namespace StocksTracker.Controllers
 
         [HttpPost]
         [Route("deleteclient")]
-        public async Task<IActionResult> DeleteClient(int id)
+        public async Task<IActionResult> DeleteClient([FromBody]int id)
         {
             try
             {

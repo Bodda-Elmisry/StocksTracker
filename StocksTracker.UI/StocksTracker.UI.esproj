@@ -10,6 +10,8 @@
   <ItemGroup>
     <Folder Include="src\app\models\" />
     <Folder Include="src\app\client_detail\" />
+    <Folder Include="src\app\clinets_list\" />
+    <Folder Include="src\app\client-add\" />
     <Folder Include="src\app\services\" />
   </ItemGroup>
 </Project>

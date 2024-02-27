@@ -1,0 +1,27 @@
+<form (ngSubmit)="saveClient()" #newClientForm="ngForm">
+  <div>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" [(ngModel)]="newClient.firstName" required>
+  </div>
+  <div>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" [(ngModel)]="newClient.lastName" required>
+  </div>
+  <div>
+    <label for="emailAddress">Email:</label>
+    <input type="email" id="emailAddress" name="emailAddress" [(ngModel)]="newClient.emailAddress" required>
+  </div>
+  <div>
+    <label for="phoneNumber">Phone:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" [(ngModel)]="newClient.phoneNumber" required>
+  </div>
+  <div>
+    <label for="nationality">Nationality:</label>
+    <select name="nationality" [(ngModel)]="newClient.nationality">
+        <option *ngFor="let nat of nationalities" [value]="nat.name.common"> {{ nat.name.common }}</option>
+    </select>
+  </div>
+  <div>
+    <button type="submit" [disabled]="!newClientForm.valid">Save</button>
+  </div>
+</form>

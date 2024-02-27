@@ -29,9 +29,12 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddScoped<IClientRepository, ClientRepository>();
 builder.Services.AddScoped<IClientService, ClientService>();
+builder.Services.AddScoped<INationalityService, NationalityService>();
 
 builder.Services.AddScoped<IStockRepository, StockRepository>();
 builder.Services.AddScoped<IStockService, StockService>();
+
+builder.Services.AddScoped<IEmialService, EmailService>();
 
 var app = builder.Build();
 

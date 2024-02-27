@@ -1,18 +1,29 @@
+@if(client) {
 <form (ngSubmit)="saveClient()" #clientForm="ngForm">
-  <label for="firstName">First Name:</label>
-  <input type="text" id="firstName" name="firstName" [(ngModel)]="client.firstName" required>
-
-  <label for="lastName">Last Name:</label>
-  <input type="text" id="lastName" name="lastName" [(ngModel)]="client.lastName" required>
-
-  <label for="emailAddress">Email:</label>
-  <input type="email" id="emailAddress" name="emailAddress" [(ngModel)]="client.emailAddress" required>
-
-  <label for="phoneNumber">Phone:</label>
-  <input type="text" id="phoneNumber" name="phoneNumber" [(ngModel)]="client.phoneNumber" required>
-
-  <label for="nationality">Nationality:</label>
-  <input type="text" id="nationality" name="nationality" [(ngModel)]="client.nationality" required>
-
-  <button type="submit" [disabled]="!clientForm.valid">Save</button>
+  <div>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" [(ngModel)]="client.firstName" required>
+  </div>
+  <div>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" [(ngModel)]="client.lastName" required>
+  </div>
+  <div>
+    <label for="emailAddress">Email:</label>
+    <input type="email" id="emailAddress" name="emailAddress" [(ngModel)]="client.emailAddress" required>
+  </div>
+  <div>
+    <label for="phoneNumber">Phone:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" [(ngModel)]="client.phoneNumber" required>
+  </div>
+  <div>
+    <label for="nationality">Nationality:</label>
+    <select name="nationality" [(ngModel)]="client.nationality">
+      <option *ngFor="let nat of nationalities" [value]="nat.name.common"> {{ nat.name.common }}</option>
+    </select>
+  </div>
+  <div>
+    <button type="submit" [disabled]="!clientForm.valid">Save</button>
+  </div>
 </form>
+}

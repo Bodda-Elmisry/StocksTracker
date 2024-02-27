@@ -13,13 +13,7 @@ namespace StocksTracker.WCFService
     public interface IService1
     {
         [OperationContract]
-        Task<string> GetData();
-
-        [OperationContract]
-        Task<bool> GetStocks();
-
-        //[OperationContract]
-        //CompositeType GetDataUsingDataContract(CompositeType composite);
+        Task GetData();
 
         // TODO: Add your service operations here
     }

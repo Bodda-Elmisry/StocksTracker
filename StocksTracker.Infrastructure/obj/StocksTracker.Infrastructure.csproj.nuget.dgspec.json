@@ -102,6 +102,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.2, )"
@@ -121,6 +125,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "System.Net.Http.Formatting.Extension": {
+              "target": "Package",
+              "version": "[5.2.3, )"
             }
           },
           "imports": [
