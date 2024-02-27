@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksTracker.WCFService", 
 		{7171490E-C09E-4C69-9F84-A15489FF8C1C} = {7171490E-C09E-4C69-9F84-A15489FF8C1C}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{811295C3-FD47-49D4-AB96-5A0BEAA9DECC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{04152435-6EC4-4407-912C-A91E419FA045}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04152435-6EC4-4407-912C-A91E419FA045}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04152435-6EC4-4407-912C-A91E419FA045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{811295C3-FD47-49D4-AB96-5A0BEAA9DECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811295C3-FD47-49D4-AB96-5A0BEAA9DECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811295C3-FD47-49D4-AB96-5A0BEAA9DECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811295C3-FD47-49D4-AB96-5A0BEAA9DECC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
