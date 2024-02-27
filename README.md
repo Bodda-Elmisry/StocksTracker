@@ -12,3 +12,20 @@
   o	After Database creation write click on “StocksTracker” solution name and select “Configure Startup Projects” then select “Multiple startup projects”
   o	Select “Start” from “Action” column to projects “ServiceHost, StocksTracker, StocksTracker.WCFService, StocksTracker.UI” and then click “ok” button.
   o	Run application by click “F5”
+- Install API on IIS :-
+  o Publish "StocksTracker" Project :-
+    * Write click on the project name.
+    * Select "Publish"
+    * If you have a publish profile from it select "Publish" button,
+    * If you don't have one create new profile :-
+      1- Select "Folder" from "Target" menu.
+      2- Add location to publish.
+      3- Click "Finish" button.
+    * Then select "Publish" button.
+  o Once publish completed go to published files path and coby it to site path.
+  o Create "Site" on "IIS" :-
+    * Open "IIS".
+    * From left side go to "Sites"
+    * Write click on it and select "Add Websits"
+    * Enter site info.
+    * Click "Ok" button
